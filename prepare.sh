@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#to use as root
+uid=$(id -u)
+if [ $uid -ne 0 ];then
+    echo "error: please run this script as root using sudo!"
+    exit 1
+fi
+
 #update package list
 apt update
 
