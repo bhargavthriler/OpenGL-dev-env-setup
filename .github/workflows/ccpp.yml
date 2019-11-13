@@ -9,6 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: prepare env
+      run: ./prepare.sh 
     - name: make
       run: make
     - name: clean
