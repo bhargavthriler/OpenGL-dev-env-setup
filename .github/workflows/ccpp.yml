@@ -13,5 +13,3 @@ jobs:
       run: sudo ./prepare.sh 
     - name: make
       run: make
-    - name: clean
-      run: make clean
